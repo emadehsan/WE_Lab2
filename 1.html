@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Responsive Image broswer</title>
+
+<style type="text/css">
+
+	.wrapper {
+		position:relative;
+		margin:0 auto;
+		max-width:80%;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	
+	h1 {
+		text-align:center;
+	}
+	
+	nav {
+		display:block;
+		margin-top:60px;
+		text-align:center;
+	}
+
+	nav a img {
+		padding:3px 5px;
+		background:#ccc;
+		text-decoration:none;
+		border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+	}
+
+	p {
+		color:black;
+		text-align:center;
+	}
+
+    @media screen and (max-width:580px) {
+        
+    }
+
+
+    #one:target {
+        display: block;
+    }
+    #two:target {
+        display: block;
+    }
+    #three:target {
+        display: block;
+    }
+    #four:target {
+        display: block;
+    }
+    #five:target {
+        display: block;
+    }
+    #six:target {
+        display: block;
+    }
+
+    .thumbnail {
+        max-height: 100px;
+        max-width: 100px;
+        width: 100%;
+    }
+    .pic {
+        display: none;
+        max-width: 800px;
+        width: auto;
+        height: auto;
+        margin: auto;
+        width: 75%;
+    }
+    .pic img {
+        height: auto;
+        margin: auto;
+        width: 100%;
+    }
+    figcaption {
+        text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+
+
+
+	<div class="wrapper">
+
+        <h1>Image Browser</h1>
+    
+    	<nav>
+            <a href="#one"><img class="thumbnail" src="1.jpg"/></a>
+            <a href="#two"><img  class="thumbnail" src="2.jpg"/></a>
+            <a href="#three"><img  class="thumbnail" src="3.jpg"/></a>
+            <a href="#four"><img  class="thumbnail" src="4.jpg"/></a>
+            <a href="#five"><img  class="thumbnail" src="5.jpg"/></a>
+            <a href="#six"><img  class="thumbnail" src="6.jpg"/></a>
+        </nav>
+
+        <figure id="one" class="pic">
+            <img src="1.jpg" />
+            <figcaption>Image 1</figcaption>
+        </figure>
+
+        <figure   id="two"  class="pic">
+            <img src="2.jpg"/>
+            <figcaption>Image 2</figcaption>
+        </figure>
+
+        <figure  id="three"  class="pic">
+            <img src="3.jpg"/>
+            <figcaption>Image 3</figcaption>
+        </figure>
+
+        <figure id="four" class="pic">
+            <img src="4.jpg" />
+            <figcaption>Image 4</figcaption>
+        </figure>
+
+        <figure  id="five"  class="pic">
+            <img src="5.jpg"/>
+            <figcaption>Image 5</figcaption>
+        </figure>
+
+        <figure  id="six" class="pic">
+            <img src="6.jpg"/>
+            <figcaption>Image 6</figcaption>
+        </figure>
+    
+    </div>
+
+
+
+</body></html>
